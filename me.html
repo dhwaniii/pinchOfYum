@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>FAST FOOD</TITLE>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <style>
+ button{
+ background-color:#7d3b5e ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+  margin-top:80px;
+  border-radius:7px;}
+  button:hover {
+  background-color:#bd779c ;
+}
+ </style>
+ </head>
+
+
+
+
+
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+<video id="video1" width="320" height="240" autoplay>
+  <source src="img\bday2020.mp4" type="video/mp4">
+  
+</video>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<a class="link" href="Home.html"><b> HOME</b></a></li></center>
+<br>
+<br>
+<br>
+<a class="link" href="https://www.youtube.com/user/pinchofyum"><b> Know more about PinchOfYum</b></a></li></center>
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script>
